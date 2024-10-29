@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(18, 202, 193);
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: rgb(255, 0, 64);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 0, 64);
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgb(230, 0, 55);
+    border-radius: 5px;
+}
+
+.container {
+    width: 85%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(232, 238, 240);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about-me img {
+    border-radius: 100px;
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    
+}
+
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.skills-table th, .skills-table td {
+    border: 2px solid #e7c60a;
+    padding: 10px;
+    text-align: left;
+}
+
+.skills-table th {
+    background-color: #9dd616;
+    color: #333;
+}
+
+.contact-section {
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(153, 41, 41, 0.1);
+    margin: 20px auto;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid aqua;
+    width: 100%;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+    grid-column: span 2;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+    background-color: darkblue;
+}
+
+.hidden {
+    display: none;
+}
+
+.clickable {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
